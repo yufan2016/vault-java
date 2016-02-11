@@ -1,3 +1,4 @@
+package vault.java;
 import java.util.List;
 
 public class VaultException extends RuntimeException {

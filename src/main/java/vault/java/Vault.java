@@ -1,3 +1,4 @@
+package vault.java;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
 

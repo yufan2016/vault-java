@@ -1,8 +1,18 @@
+package vault.java;
 import junit.framework.TestCase;
-import org.junit.Before;
+import vault.java.TokenCreateRequest;
+import vault.java.TokenCreateRequestBuilder;
+import vault.java.TokenResponse;
+import vault.java.Vault;
+import vault.java.VaultException;
+import vault.java.VaultResponse;
+import vault.java.VaultStatus;
 
+import org.junit.Before;
+import org.junit.Ignore;
 import java.util.HashMap;
 
+@Ignore
 public class VaultTest extends TestCase {
 
     private String token = System.getenv("VAULT_TOKEN");
