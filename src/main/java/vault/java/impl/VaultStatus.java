@@ -1,4 +1,4 @@
-package vault.java;
+package vault.java.impl;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class VaultStatus {

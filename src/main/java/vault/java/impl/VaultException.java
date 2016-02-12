@@ -1,8 +1,12 @@
-package vault.java;
+package vault.java.impl;
 import java.util.List;
 
 public class VaultException extends RuntimeException {
-    private final int statusCode;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8831986035514998978L;
+	private final int statusCode;
     private final List<String> messages;
 
     public VaultException(int statusCode, List<String> messages) {
@@ -17,4 +21,9 @@ public class VaultException extends RuntimeException {
     public List<String> getMessages() {
         return messages;
     }
+
+	@Override
+	public String toString() {
+		return "VaultException [statusCode=" + statusCode + ", messages=" + messages + "]";
+	}
 }

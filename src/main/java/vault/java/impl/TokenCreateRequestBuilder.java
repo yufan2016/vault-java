@@ -1,4 +1,4 @@
-package vault.java;
+package vault.java.impl;
 import java.util.List;
 import java.util.Map;
 

@@ -1,12 +1,12 @@
 package vault.java;
 import junit.framework.TestCase;
-import vault.java.TokenCreateRequest;
-import vault.java.TokenCreateRequestBuilder;
-import vault.java.TokenResponse;
-import vault.java.Vault;
-import vault.java.VaultException;
-import vault.java.VaultResponse;
-import vault.java.VaultStatus;
+import vault.java.impl.TokenCreateRequest;
+import vault.java.impl.TokenCreateRequestBuilder;
+import vault.java.impl.Vault;
+import vault.java.impl.VaultException;
+import vault.java.impl.VaultStatus;
+import vault.java.response.TokenResponse;
+import vault.java.response.VaultResponse;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -25,7 +25,7 @@ public class VaultTest extends TestCase {
 
     public void testWrite() throws Exception {
 
-        HashMap<String, String> data = new HashMap<>();
+        HashMap<String, Object> data = new HashMap<>();
         data.put("value", "hello");
         vault.write("secret/hello", data);
     }
